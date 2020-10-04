@@ -69,6 +69,7 @@ console.log("Is mark's BMI higher than John's?", higherBmi);
 */
 
 // if else statements 
+/*
 var firstName = "Jonathan";
 var civilStatus = "single";
 
@@ -76,4 +77,45 @@ if (civilStatus == "married") {
     console.log(firstName + " is married");
 } else {
     console.log(firstName + " will hopefully marry soon.");
+}
+var firstName = "Jonathan";
+var age = 16;
+
+if (age < 13) {
+    console.log(firstName + " is a boy.");
+} else if (age >= 13 && age < 20) {
+    console.log(firstName + " is a teenager.")
+} else {
+    console.log(firstName + " is a man.");
+}
+
+*/
+
+// Ternary Operators and Switch Statements 
+
+var firstName = "Jonathan";
+var age = 26;
+
+age >= 21 ? console.log(firstName + " drinks a beer.")
+    : console.log("drinks a juice.");
+
+//This is a ternary operator that can take the place of
+// an else if statement. Need more practice on this.
+
+var drink = age >= 21 ? 'beer' : 'juice';
+console.log(drink);
+
+var job = "Yuhhhh";
+switch (job) {
+    case 'unemployed':
+        console.log('Get a job!');
+        break;
+    case 'driver':
+        console.log('drives for uber.');
+        break;
+    case 'developer':
+        console.log('builds awesome websites.');
+        break;
+    default:
+        console.log("I don't know what to tell ya chief.");
 }
