@@ -92,7 +92,7 @@ if (age < 13) {
 */
 
 // Ternary Operators and Switch Statements 
-
+/*
 var firstName = "Jonathan";
 var age = 26;
 
@@ -118,4 +118,39 @@ switch (job) {
         break;
     default:
         console.log("I don't know what to tell ya chief.");
+}
+
+//Truthy and Falsy Values
+
+var height = 60;
+if (height) {
+    console.log('Variable is defined');
+} else {
+    console.log('Variable has not been defined.');
+}
+// why does zero still return undefined?? 
+
+if (height == '60') {
+    console.log('The == operator does type coercion.');
+}
+// == will convert int to string === is strict comparison.
+*/
+
+// Coding Challenge 2: 
+
+var johnScore = 89 + 120 + 103;
+console.log(johnScore);
+var mikeScore = 116 + 9 + 123;
+var maryScore = 97 + 134 + 105;
+var johnAverage = johnScore / 3;
+var mikeAverage = mikeScore / 3;
+var maryAverage = maryScore / 3;
+console.log(mikeAverage);
+
+if (johnAverage > mikeAverage && johnAverage > maryAverage) {
+    console.log(`John's team wins with an average score of ${johnAverage}.`);
+} else if (mikeAverage > johnAverage && mikeAverage > maryAverage) {
+    console.log(`Mike's team wins with an average score of ${mikeAverage}`);
+} else {
+    console.log('Mary wins!');
 }
