@@ -14,7 +14,7 @@ console.log(fullAge);
 var job;
 job = "macdaddy";
 console.log(job);
- */
+ 
 
 /// Variable mutation 
 var firstName = "Jonathan";
@@ -36,3 +36,34 @@ job = 'programmer';
 alert(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
 var lastName = prompt('What is his last name?');
 console.log(lastName);
+
+Basic Operators 
+var year = 2020;
+var yearJonathan = 26;
+var yearMark = 33;
+console.log(yearJonathan + 2);
+var whoOlder = yearJonathan > yearMark
+console.log(whoOlder);
+
+var now = 2020;
+var yearJonathan = 1993
+var legalAge = 18;
+
+var isLegalAge = now - yearJonathan >= legalAge;
+console.log(isLegalAge);
+*/
+
+// Coding challenge one 
+
+var johnHeight = 60;
+var markHeight = 72;
+var johnMass = 213;
+var markMass = 178;
+
+var johnBmi = johnMass / (johnHeight * johnHeight);
+console.log(johnBmi);
+var markBmi = markMass / (markHeight * markHeight);
+
+var higherBmi = markBmi > johnBmi;
+console.log(higherBmi);
+console.log("Is mark's BMI higher than John's?", higherBmi);
