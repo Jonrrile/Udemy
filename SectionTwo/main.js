@@ -128,15 +128,15 @@ if (height) {
 } else {
     console.log('Variable has not been defined.');
 }
-// why does zero still return undefined?? 
+// why does zero still return undefined??
 
 if (height == '60') {
     console.log('The == operator does type coercion.');
 }
 // == will convert int to string === is strict comparison.
-*/
 
-// Coding Challenge 2: 
+
+// Coding Challenge 2:
 
 var johnScore = 89 + 120 + 103;
 console.log(johnScore);
@@ -153,4 +153,87 @@ if (johnAverage > mikeAverage && johnAverage > maryAverage) {
     console.log(`Mike's team wins with an average score of ${mikeAverage}`);
 } else {
     console.log('Mary wins!');
+}
+
+function calculateAge(birthYear) {
+    return 2020 - birthYear;
+}
+
+var ageMe = calculateAge(1993);
+console.log(ageMe);
+
+function yearsUntilRetire(birthYear, firstName) {
+    var age = calculateAge(birthYear);
+    var retirement = 65 - age;
+    console.log(firstName + ' retires in ' + retirement + ' years.');
+}
+
+yearsUntilRetire(1993, 'Jonathan');
+//Function Statements and Expressions
+//Function Expression
+var whatDoYouDo = function (job, firstName) {
+    switch (job) {
+        case 'teacher':
+            return firstName + ' teaches people how to code.';
+        case 'driver':
+            return firstName + ' drives people around.';
+        case 'developer':
+            return firstName + ' makes beautiful websites.';
+        case 'default':
+            return firstName + ' does something secret.';
+    }
+}
+console.log(whatDoYouDo('developer', 'Jonathan'));
+console.log(whatDoYouDo('teacher', 'Garrett'));
+//Function Declaration
+//function WhatDoYouDo(job, firstName) {}
+
+
+//Arrays
+
+var names = ['Jonathan', 'Garrett', 'James', 'Aaron'];
+var years = new Array(1993, 1994, 1995, 1992); // less often used.
+
+console.log(names);
+console.log(names.length); // how many elements are in the array
+
+names[1] = 'Ben';
+console.log(names);
+names[names.length] = 'Mary';
+console.log(names);
+
+//Different data types
+var Jonathan = ['Jonathan', 'Riley', 1993, 'developer', false];
+
+Jonathan.push("green"); // add to end
+Jonathan.unshift('Mr.'); // add to beginning
+console.log(Jonathan);
+
+Jonathan.pop(); //take off end
+console.log(Jonathan);
+
+Jonathan.shift(); // take off beginning
+console.log(Jonathan);
+
+console.log(Jonathan.indexOf('Riley')); //Test if something is included in an array
+
+var isDeveloper = Jonathan.indexOf('developer') === -1 ?
+    'Jonathan is NOT a developer' : "Jonathan is a developer";
+console.log(isDeveloper);
+*/
+// Coding Challenge 3
+
+// var bills = [124, 48, 268];
+// var finalAmount = [];
+
+// function calculateTip(bills) {
+//     finalAmount.push(bills * (20 / 100) + bills);
+// }
+
+// calculateTip(124);
+// console.log(finalAmount);
+
+// For Loop and Iteration 
+for (var i = 0; i < 10; i++) {
+    console.log(i);
 }
